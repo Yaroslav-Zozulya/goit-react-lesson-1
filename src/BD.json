@@ -1,0 +1,35 @@
+[
+  {
+    "id": "id-1",
+    "url": "https://static-cse.canva.com/blob/847064/29.jpg",
+    "title": "Google photo",
+    "price": 500,
+    "author": {
+      "tag": "pactapopulous",
+      "url": "https://google.com"
+    },
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "url": "https://static-cse.canva.com/blob/847064/29.jpg",
+    "title": "Instagram photo",
+    "price": 1000,
+    "author": {
+      "tag": "instagram tag",
+      "url": "https://google.com"
+    },
+    "quantity": 9
+  },
+  {
+    "id": "id-3",
+    "url": "https://static-cse.canva.com/blob/847064/29.jpg",
+    "title": "Twitter photo",
+    "price": 2000,
+    "author": {
+      "tag": "twitter tag",
+      "url": "https://google.com"
+    },
+    "quantity": 10
+  }
+]
