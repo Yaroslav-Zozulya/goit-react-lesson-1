@@ -17,3 +17,8 @@ img {
 }
 
 @import 'modern-normalize/modern-normalize.css';
+
+.box.red {
+  margin: 10px;
+  background-color: red;
+}
