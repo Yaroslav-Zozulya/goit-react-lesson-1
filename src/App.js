@@ -1,6 +1,7 @@
 // import PaintingList from './components/PaintingList/PaintingList';
 // import ColorPicker from './components/ColorPicker/ColorPicker';
-import Box from './components/Box/Box';
+// import Box from './components/Box/Box';
+import Counter from './components/Counter/Counter';
 
 // import data from './BD.json';
 import './index.css';
@@ -17,9 +18,10 @@ import './index.css';
 export default function App() {
   return (
     <div>
-      <Box type="large" classNames="red" styles={{ color: 'white' }} />
+      {/* <Box type="large" classNames="red" styles={{ color: 'white' }} />
       <Box type="medium" />
-      <Box />
+      <Box /> */}
+      <Counter initialValue={10} />
       {/* <ColorPicker options={colorPickerOptions} /> */}
       {/* <PaintingList items={data} /> */}
     </div>
