@@ -1,5 +1,7 @@
+import s from './Counter.module.css';
+
 const Controls = ({ onIncrement, onDecrement }) => (
-  <div className="Counter__controls">
+  <div className={s.Counter__controls}>
     <button type="button" onClick={onIncrement}>
       Увеличить на 1
     </button>

@@ -12,7 +12,7 @@
   margin-bottom: 20px;
   font-size: 30px;
 }
-button {
+.Counter__controls button {
   padding: 5px;
   background-color: tomato;
   border: none;
@@ -20,6 +20,6 @@ button {
   box-shadow: 0px 2px 2px 2px;
   cursor: pointer;
 }
-button:not(:last-child) {
+.Counter__controls button:not(:last-child) {
   margin-right: 10px;
 }
