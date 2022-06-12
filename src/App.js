@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import Form from './components/Form';
-// import TodoList from './components/TodoList';
+import TodoApp from './components/TodoApp';
 
 import './index.css';
 
@@ -13,55 +11,53 @@ import './index.css';
 //   { label: 'indigo', color: '#3F51B5' },
 // ];
 
-class App extends Component {
-  state = {
-    todos: [
-      { id: 'id-1', text: 'Выучить основы React', completed: true },
-      { id: 'id-2', text: 'Разобраться в React Router', completed: false },
-      { id: 'id-3', text: 'Пережить Redux', completed: false },
-    ],
-  };
+const App = () => {
+  return (
+    <>
+      <TodoApp />
+    </>
+  );
+};
 
-  formSubmitHandler = data => {
-    setTimeout(() => {
-      console.log(data);
-    }, 2000);
-  };
+// class App extends Component {
+// state = {
+//   todos: todosData,
+// };
 
-  // deleteTodo = todoId => {
-  //   this.setState(prevState => ({
-  // todos: prevState.todos.filter(todo => todo.id !== todoId),
-  //   }));
-  // };
+// formSubmitHandler = data => {
+//   setTimeout(() => {
+//     console.log(data);
+//   }, 2000);
+// };
 
-  // render() {
-  //   const { todos } = this.state;
+// deleteTodo = todoId => {
+//   this.setState(prevState => ({
+//     todos: prevState.todos.filter(todo => todo.id !== todoId),
+//   }));
+// };
 
-  //   const totalTodos = todos.length;
-  //   const completedTodos = todos.reduce(
-  //     (total, todo) => (todo.completed ? total + 1 : total),
-  //     0
-  //   );
-  //   const notCompletedTodos = todos.reduce(
-  //     (total, todo) => (todo.completed ? total : total + 1),
-  //     0
-  //   );
+// render() {
+// const { todos } = this.state;
 
-  //   return (
-  //     <>
-  //       <h1>Состояние компонента</h1>
-  //       <div>
-  //         <p>Общее количество Todo: {totalTodos}</p>
-  //         <p>Количество выполненных: {completedTodos}</p>
-  //         <p>Количество не выполненных: {notCompletedTodos}</p>
-  //       </div>
-  //       <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
-  //     </>
-  //   );
-  // }
-  render() {
-    return <Form onSubmit={this.formSubmitHandler} />;
-  }
-}
+// const totalTodos = todos.length;
+// const completedTodos = todos.reduce(
+//   (total, todo) => (todo.completed ? total + 1 : total),
+//   0
+// );
+// const notCompletedTodos = todos.reduce(
+//   (total, todo) => (todo.completed ? total : total + 1),
+//   0
+// );
+
+// return (
+//   <>
+//     <TodoApp />
+//   </>
+// );
+// }
+// render() {
+//   return <Form onSubmit={this.formSubmitHandler} />;
+// }
+// }
 
 export default App;
